@@ -3,11 +3,19 @@
 
 
 
+\usepackage{fontspec}
 \usepackage[text={160mm,240mm},centering]{geometry}                % See geometry.pdf to learn the layout options. There are lots.
 \geometry{a4paper}                   % ... or a4paper or a5paper or ...
 
 %\geometry{landscape}                % Activate for for rotated page geometry
 %\usepackage[parfill]{parskip}    % Activate to begin paragraphs with an empty line rather than an indent
+
+\setromanfont{STSong} % 宋体
+%\setmonofont{Courier New} % 等寬字型
+\XeTeXlinebreaklocale "zh"
+\XeTeXlinebreakskip = 0pt plus 1pt
+
+
 
 \usepackage{graphicx}
 \usepackage{amssymb}
@@ -82,11 +90,9 @@
 \newcommand{\E}{\mathcal{E}}
 \newcommand{\A}{\mathcal{A}}
 \newcommand{\OO}{\mathcal{O}}
-\newcommand{\T}{\mathcal{T}}
-\newcommand{\F}{\mathcal{F}}
+
 \newcommand{\GG}{\mathcal{G}}
 \newcommand{\I}{\mathcal{I}}
-\newcommand{\M}{\mathcal{M}}
 \newcommand{\dlim}{\varinjlim}
 \newcommand{\ilim}{\varprojlim}
 \newcommand{\til}{\widetilde}
@@ -113,11 +119,28 @@
 %============================================================
 
 
-
-\title{Lectures on Derived Representation Schemes}
-
 \begin{document}
-
+\title{线性代数讲义 -- 方法与应用}
 \maketitle
+\newpage
+
+\title{Lectures on Linear Algebras -- Its Methods and Applications}
+\maketitle
+
+\section*{Introduction}
+These lecture notes are based on the quiz courses for students who are major in ACCA. During teaching I found it a bit pity that the editors of the textbook had to ignore many interesting and essential materials on linear algebras, especially for the lost of emphasizing on linear transformation. So I tried to give some supplements for the students without only teaching them doing exercises. I hope this will help them understand linear algebras more naturally.
+
+Besides linear equation system, many examples in linear algebras comes from geometry, or in other words, one can find geometric meanings behind the algebras. The supplements on applications in geometry will make linear algebras more intuitive, and more interesting.
+
+The notes are organized as follows: in preliminary part we will recall some knowledge in high school, especially the vectors, vector operations and inner product.  Then the first three lectures will give three examples on geometric meanings and applications of linear algebras. These will include the determinants and structure theorem of linear equation system. The three lectures are independent and one   should feel free to start reading from any lecture. Then we will focus on linear transformations, which will be induced from the coordinate transformation. Then matrix comes naturally.  Using the viewpoint of linear transformation, we will give a unified interpretation of matrix operations, and more important, the similar transformation. All the materials in the notes will be easily understood if the readers has a basic knowledge on linear algebras :)
+
+These lecture notes are far from accomplishment. I hope others can add more interesting materials into these notes. I have already put these on github: https://github.com/yiruixiong/linear-algebra-lectures.git. You can visit it and clone into your own computer.
+\begin{flushright}
+\textit{
+Yirui Xiong} \\
+Department of Mathematics, Sichuan University \\ Chengdu, Sichuan Province 610064 P. R. China \\
+Email: yiruimee@163.com
+
+\end{flushright}
 
 \end{document}
